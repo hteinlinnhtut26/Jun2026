@@ -1,2 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
+//Console.ReadKey();
+//Console.ReadLine();
+string input = Console.ReadLine();
+Console.WriteLine("Hello " + input);
+
