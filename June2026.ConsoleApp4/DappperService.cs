@@ -75,7 +75,7 @@ WHERE StudentNo = 'STU006'");
             using (IDbConnection db = new SqlConnection(sb.ConnectionString))
             {
                 db.Open();
-                int result = db.Execute("Delete From Tbl_Student where StudentId = 12");
+                int result = db.Execute("Delete From Tbl_Student where StudentId = 31");
                 Console.WriteLine($"Row affected {result}");
             }
         }
