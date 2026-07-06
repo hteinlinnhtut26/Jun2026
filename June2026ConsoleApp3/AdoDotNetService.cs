@@ -25,13 +25,6 @@ internal class AdoDotNetService
     }
     public void Read()
     {
-        //sb = new SqlConnectionStringBuilder();
-        sb.DataSource = ".";//(local)// server name
-        sb.InitialCatalog = "June2026DB"; //database name
-        sb.UserID = "sa";
-        sb.Password = "sasa@123";
-        sb.TrustServerCertificate = true;
-
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
         
         connection.Open();       
@@ -74,8 +67,6 @@ internal class AdoDotNetService
             lst.Add(student);
             
         }
-
-        connection.Close();
         
     }
     public void Create()
@@ -101,9 +92,6 @@ VALUES
 
         SqlCommand cmd = new SqlCommand(query,connection);
         cmd.ExecuteNonQuery();
-
-
-        connection.Close();
     }
     public void Update()
     {
@@ -123,25 +111,17 @@ WHERE StudentNo = 'STU004'";
 
         SqlCommand cmd = new SqlCommand(query, connection);
         cmd.ExecuteNonQuery();
-
-
-        connection.Close();
     }
     public void Delete()
     {
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
-        Console.WriteLine("Connection Opening");
         connection.Open();
-        Console.WriteLine("Connection opened");
 
         String query = @"DELETE FROM Tbl_Student
 WHERE StudentNo = 'STU003'";
 
         SqlCommand cmd = new SqlCommand(query, connection);
         cmd.ExecuteNonQuery();
-
-
-        connection.Close();
     }
   public class Student
     {
