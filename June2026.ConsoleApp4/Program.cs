@@ -17,10 +17,6 @@ DapperService dapservice = new DapperService();
 dapservice.Create();
 dapservice.Update();
 dapservice.Delete();*/
-
-
-
-
 public class Student
 {
     public int StudentId { get; set; }
