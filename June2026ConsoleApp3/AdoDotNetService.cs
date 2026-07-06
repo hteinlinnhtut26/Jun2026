@@ -34,9 +34,7 @@ internal class AdoDotNetService
 
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
         
-        connection.Open();
-        
-
+        connection.Open();       
         String query = @"SELECT [StudentId]
       ,[StudentName]
       ,[FatherName]
@@ -80,15 +78,8 @@ internal class AdoDotNetService
         connection.Close();
         
     }
-
     public void Create()
     {
-        SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
-        sb.DataSource = ".";//(local)// server name
-        sb.InitialCatalog = "June2026DB"; //database name
-        sb.UserID = "sa";
-        sb.Password = "sasa@123";
-        sb.TrustServerCertificate = true;
 
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
         connection.Open();
@@ -116,12 +107,6 @@ VALUES
     }
     public void Update()
     {
-        SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
-        sb.DataSource = ".";//(local)// server name
-        sb.InitialCatalog = "June2026DB"; //database name
-        sb.UserID = "sa";
-        sb.Password = "sasa@123";
-        sb.TrustServerCertificate = true;
 
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
         connection.Open();
@@ -144,13 +129,6 @@ WHERE StudentNo = 'STU004'";
     }
     public void Delete()
     {
-        SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
-        sb.DataSource = ".";//(local)// server name
-        sb.InitialCatalog = "June2026DB"; //database name
-        sb.UserID = "sa";
-        sb.Password = "sasa@123";
-        sb.TrustServerCertificate = true;
-
         SqlConnection connection = new SqlConnection(sb.ConnectionString);
         Console.WriteLine("Connection Opening");
         connection.Open();
@@ -165,8 +143,7 @@ WHERE StudentNo = 'STU003'";
 
         connection.Close();
     }
-
-    public class Student
+  public class Student
     {
         public int StudentId { get; set; }
         public string StudentName { get; set; }
