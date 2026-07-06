@@ -4,14 +4,19 @@ using Microsoft.Data.SqlClient;
 using System.Data;
 using June2026.ConsoleApp4;
 
-Console.WriteLine("Hello, World!");
-
+Console.WriteLine("---Login----");
+Console.Write("Pls enter your username: ");
+string username = Console.ReadLine();
+Console.Write("Enter your password: ");
+string password =Console.ReadLine();
+LoginService loginService = new LoginService();
+loginService.Login(username, password);
 Console.ReadLine();
 DapperService dapservice = new DapperService();
-dapservice.Read();
+/*dapservice.Read();
 dapservice.Create();
 dapservice.Update();
-dapservice.Delete();
+dapservice.Delete();*/
 
 
 
