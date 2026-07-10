@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="June2026.ConsoleApp4/June2026.ConsoleApp4.csproj" />
+  <Project Path="June2026.ConsoleApp4(Dappper)/June2026.ConsoleApp4(Dappper).csproj" />
   <Project Path="June2026.ConsoleApp5(EFCore)/June2026.ConsoleApp5(EFCore).csproj" Id="0a2e8fa3-8baf-4698-ba2c-39933f7f60ba" />
   <Project Path="June2026.Database/June2026.Database.csproj" Id="64eb1438-3a0e-49bc-8509-c4ec5589ddb3" />
-  <Project Path="June2026ConsoleApp3/June2026ConsoleApp3.csproj" />
+  <Project Path="June2026ConsoleApp3(Ado)/June2026ConsoleApp3(Ado).csproj" />
 </Solution>
