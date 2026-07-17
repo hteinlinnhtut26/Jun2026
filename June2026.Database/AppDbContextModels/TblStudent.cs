@@ -19,5 +19,5 @@ public partial class TblStudent
 
     public string MoobileNo { get; set; } = null!;
 
-    public bool? IsDelete { get; set; }
+    public bool IsDelete { get; set; }
 }
